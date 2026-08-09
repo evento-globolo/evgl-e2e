@@ -1,0 +1,12 @@
+[package]
+name = "evento-globolo/evgl-e2e"
+version = "0.1.0"
+
+[install]
+dir = ".vendor/.zed"
+
+[dependencies]
+"evento-globolo/evgl-clients" = "^0.1.0"
+"evento-globolo/evgl-interfaces" = "^0.1.0"
+"evento-globolo/evgl-libs" = "^0.1.0"
+"evento-globolo/evgl-cli" = "^0.1.0"

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "canonical_repository": "evento-globolo/evgl-e2e",
+  "recovered_source": {
+    "artifact": "zed-fleet-reconcile.sh",
+    "script_version": "2026-08-05.2",
+    "sha256": "70e7bcdfa3a8a3e15bcbf8bd635a240baca53c9b95a36f01f4aa312f66fd18ae",
+    "verified_on": "2026-08-08",
+    "checks": [
+      "sha256",
+      "bash-syntax",
+      "manifest-normalization",
+      "history-preserving-consolidation",
+      "git-submodule-dual-ownership-guard",
+      "mcp-scaffold-contract",
+      "e2e-scaffold-contract"
+    ]
+  },
+  "disposition": "superseded-by-enriched-reviewed-seed",
+  "successor": {
+    "repository": "evento-globolo/.github",
+    "pull_request": 12,
+    "branch": "agent/bootstrap-evgl-e2e",
+    "source_review_head": "812294b0f3a08f02fdfdec4d03977b92580dc25b"
+  },
+  "compatibility": {
+    "required_zed_dependencies": [
+      "evento-globolo/evgl-clients",
+      "evento-globolo/evgl-interfaces",
+      "evento-globolo/evgl-libs",
+      "evento-globolo/evgl-cli"
+    ],
+    "materialization_dir": ".vendor/.zed",
+    "browser_runners": ["playwright", "puppeteer", "selenium"],
+    "no_git_submodule_zed_dual_ownership": true,
+    "npm_lock_policy": "generate and commit a real lock during publication",
+    "zed_lock_policy": "generate only from a successful real resolver run"
+  },
+  "notes": [
+    "The recovery script generated a minimal E2E scaffold. The reviewed successor preserves its dependency, browser-runner, materialization, and lock policies while adding deterministic offline fixtures and broader product scenarios.",
+    "The recovery script is not vendored into the product repository; its immutable hash and validation evidence are retained here."
+  ]
+}

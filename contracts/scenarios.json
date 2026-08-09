@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "suite": "evgl-e2e",
+  "default_mode": "offline-fixture",
+  "scenarios": [
+    {
+      "id": "api",
+      "required": true,
+      "live_credentials_required": false
+    },
+    {
+      "id": "websocket-event-updates",
+      "required": true,
+      "live_credentials_required": false
+    },
+    {
+      "id": "ticket-check-in",
+      "required": true,
+      "live_credentials_required": false
+    },
+    {
+      "id": "recurrence-timezone",
+      "required": true,
+      "live_credentials_required": false
+    },
+    {
+      "id": "payments-webhooks",
+      "required": true,
+      "live_credentials_required": false
+    },
+    {
+      "id": "organizer-permissions",
+      "required": true,
+      "live_credentials_required": false
+    },
+    {
+      "id": "offline-sync",
+      "required": true,
+      "live_credentials_required": false
+    },
+    {
+      "id": "load",
+      "required": true,
+      "live_credentials_required": false
+    }
+  ]
+}
